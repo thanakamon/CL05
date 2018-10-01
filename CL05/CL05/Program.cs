@@ -31,7 +31,7 @@ public class ExceptionLearning
     }
     private static int div(int a, int b)
     {
-        throw new   DivideByZeroException  ();
+        throw new   FileNotFoundException();
     }
 }
 
