@@ -4,7 +4,8 @@ public class IfLearning
 {
     public static void Main()
     {
-        int point = 68; // ทดลองเปลี่ยนเป็น Console.ReadLine() เพื่อรับค่าจากผู้ใช้
+        Console.WriteLine("input your score: ");
+        int point = int.Parse(Console.ReadLine());
         if (point < 50)
             Console.WriteLine("Grade F");
         else if (point < 60)
