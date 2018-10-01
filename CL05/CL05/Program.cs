@@ -3,10 +3,22 @@ public class TryCatch
 {
     static void Main(string[] args)
     {
-        int a = 0;
-        int b = 10;
-        b /= a;
-        Console.WriteLine(a);
+        int value = 800000000;
+        
+        try
+        {
+            checked
+            {
+                int square = value * value;
+                Console.WriteLine("{0} ^ 2 = {1}", value, square);
+            }
+            }
+            
+            catch (OverflowException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
     }
 }
-
+    
